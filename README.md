@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RDC 558 — Inbound Operations Tracker
 
-## Getting Started
+This is a project to make my job easier and simulate warehouse operations visually. The goal is to reduce quality errors and understand how to work with people better. By visualizing the ART (Automated Receiving Terminal) layout and tracking every box in motion, I can learn how to be a more effective operational lead.
 
-First, run the development server:
+---
+
+## 🛠️ Getting Started
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎯 Purpose
 
-To learn more about Next.js, take a look at the following resources:
+This tool provides a **real-time simulation** of:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 📦 Box movement through ART lines (throw → scan → receive → stage)
+- 👥 Worker roles: thrower, receiver, driver
+- 🚚 Trailer + Conveyor layout by ART set and line
+- 🗓️ Inbound scheduling and team assignments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The simulation helps visualize:
 
-## Deploy on Vercel
+- Where a box is in real-time
+- Who is throwing, receiving, and staging each box
+- Where workers are placed
+- How to reduce carton errors and optimize throughput
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🤖 Future goals:
+- Integrate video feed + camera tracking
+- Match visual input to real cartons for error detection
+- Add box heatmaps and alerts
+- Assign optimal crew based on team history, productivity, and fatigue
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📷 Screenshots
+
+### 1. **ART Floor Blueprint Layout (Figma Spec)**
+![Blueprint Layout](/public/screenshots/sketch.png)
+
+### 2. **Live Simulation View**
+![Live Simulation](./public/screenshots/demo.png)
+
+### 3. **Schedule View**
+![Schedule](./public/screenshots/schedule.png)
+
+---
+
+## 📚 Learn More
+
+To learn more about the tech powering this:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+- [Framer Motion](https://www.framer.com/motion/) — used for smooth simulation animation
+- [TailwindCSS](https://tailwindcss.com/) — UI styling
+
+---
+
+## 🚀 Deployment
+
+Deploy using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+More deployment options: [Next.js deployment docs](https://nextjs.org/docs/app/building-your-application/deploying)
+
+---
+
+## 💡 Vision
+
+Imagine every carton tracked — every person accounted for — every error seen before it happens.
+
+This is just the beginning.
+
+🧠

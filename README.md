@@ -1,6 +1,6 @@
 # RDC 558 — Inbound Operations Tracker
 
-This is a project to make my job easier and simulate warehouse operations visually. The goal is to reduce quality errors and understand how to work with people better. By visualizing the ART (Automated Receiving Terminal) layout and tracking every box in motion, I can learn how to be a more effective operational lead.
+This is a project to make my job easier and simulate warehouse operations visually. The goal is to reduce quality errors and understand how to work with people better. By visualizing the ART (Automated Receiving Terminal.
 
 ---
 
